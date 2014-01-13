@@ -10,6 +10,8 @@
 		B158B4C41883953C00FC572E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B158B4C31883953C00FC572E /* Foundation.framework */; };
 		B158B4C71883953C00FC572E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B158B4C61883953C00FC572E /* main.m */; };
 		B158B4CB1883953C00FC572E /* Myiostest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B158B4CA1883953C00FC572E /* Myiostest.1 */; };
+		B158B4D31883974900FC572E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B158B4D21883974900FC572E /* Person.m */; };
+		B158B4D61883B84F00FC572E /* StockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = B158B4D51883B84F00FC572E /* StockHolding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		B158B4C61883953C00FC572E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B158B4C91883953C00FC572E /* Myiostest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Myiostest-Prefix.pch"; sourceTree = "<group>"; };
 		B158B4CA1883953C00FC572E /* Myiostest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Myiostest.1; sourceTree = "<group>"; };
+		B158B4D11883974900FC572E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		B158B4D21883974900FC572E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		B158B4D41883B84F00FC572E /* StockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockHolding.h; sourceTree = "<group>"; };
+		B158B4D51883B84F00FC572E /* StockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockHolding.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +71,11 @@
 		B158B4C21883953C00FC572E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B158B4D11883974900FC572E /* Person.h */,
+				B158B4D21883974900FC572E /* Person.m */,
 				B158B4C31883953C00FC572E /* Foundation.framework */,
+				B158B4D41883B84F00FC572E /* StockHolding.h */,
+				B158B4D51883B84F00FC572E /* StockHolding.m */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B158B4D31883974900FC572E /* Person.m in Sources */,
 				B158B4C71883953C00FC572E /* main.m in Sources */,
+				B158B4D61883B84F00FC572E /* StockHolding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
