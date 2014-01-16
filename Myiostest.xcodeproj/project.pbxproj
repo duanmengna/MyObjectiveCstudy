@@ -12,6 +12,8 @@
 		B158B4CB1883953C00FC572E /* Myiostest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B158B4CA1883953C00FC572E /* Myiostest.1 */; };
 		B158B4D31883974900FC572E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B158B4D21883974900FC572E /* Person.m */; };
 		B158B4D61883B84F00FC572E /* StockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = B158B4D51883B84F00FC572E /* StockHolding.m */; };
+		B1AC7F1A18876F300041F046 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC7F1918876F300041F046 /* Employee.m */; };
+		B1AC7F1D188777FE0041F046 /* ForeignStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC7F1C188777FE0041F046 /* ForeignStockHolding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,10 @@
 		B158B4D21883974900FC572E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		B158B4D41883B84F00FC572E /* StockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockHolding.h; sourceTree = "<group>"; };
 		B158B4D51883B84F00FC572E /* StockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockHolding.m; sourceTree = "<group>"; };
+		B1AC7F1818876F300041F046 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		B1AC7F1918876F300041F046 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		B1AC7F1B188777FE0041F046 /* ForeignStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForeignStockHolding.h; sourceTree = "<group>"; };
+		B1AC7F1C188777FE0041F046 /* ForeignStockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForeignStockHolding.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,10 @@
 				B158B4C31883953C00FC572E /* Foundation.framework */,
 				B158B4D41883B84F00FC572E /* StockHolding.h */,
 				B158B4D51883B84F00FC572E /* StockHolding.m */,
+				B1AC7F1818876F300041F046 /* Employee.h */,
+				B1AC7F1918876F300041F046 /* Employee.m */,
+				B1AC7F1B188777FE0041F046 /* ForeignStockHolding.h */,
+				B1AC7F1C188777FE0041F046 /* ForeignStockHolding.m */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -150,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B158B4D31883974900FC572E /* Person.m in Sources */,
+				B1AC7F1D188777FE0041F046 /* ForeignStockHolding.m in Sources */,
+				B1AC7F1A18876F300041F046 /* Employee.m in Sources */,
 				B158B4C71883953C00FC572E /* main.m in Sources */,
 				B158B4D61883B84F00FC572E /* StockHolding.m in Sources */,
 			);
@@ -263,6 +275,7 @@
 				B158B4D01883953C00FC572E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
