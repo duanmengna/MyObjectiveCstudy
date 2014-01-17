@@ -13,10 +13,20 @@
 
 void Stockfun();
 
+void test_nsdate();
+void test_hostname();
+void test_groceries();
+
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
+
+      //test_nsdate();
+      //test_hostname();
+      //test_groceries();
+
+      Stockfun();
         
 //        Person *person = [[Person alloc] init];
 //id类型类似于(void*) ,可以指向任何类的实例。而不需要强制转换
@@ -27,12 +37,8 @@ int main(int argc, const char * argv[])
 //        
 //        float bmi = [person bodyMassIndex];
 //        NSLog(@"person (%d,%f) has a BMI of %f",[person weightInKilos],[person heightInMeters],bmi);
-        
-
-    Stockfun();
-
     return 0;
-}
+  }
 }
     void Stockfun()
     {
@@ -64,3 +70,53 @@ int main(int argc, const char * argv[])
     }
 
 
+void test_groceries(){
+    NSMutableArray *list = [NSMutableArray array];
+    [list addObject:@"Apple"];
+    [list addObject:@"Or-juzi"];
+    
+    //NSLog(@"list:%@", list);
+    for (NSString *name in list) {
+        NSLog(@"the item %@:",name);
+    }
+}
+
+void test_hostname()
+{
+    NSHost *currenthost = [NSHost currentHost];
+    NSString *computername = [currenthost localizedName];
+    NSLog(@"COMPUTER NAME IS %@",computername);
+}
+
+void test_nsdate()
+{
+    NSLog(@"my time zone: %@", [NSTimeZone localTimeZone]);
+    NSLog(@"default tiime zone:%@",[NSTimeZone defaultTimeZone]);
+    //NSLog(@"know tz list: %@",[NSLocale availableLocaleIdentifiers]);
+    
+    
+    //NSLocale *mylocale = [NSLocale init]
+    NSDictionary *myhash = [[NSUserDefaults standardUserDefaults] dictionaryRepresentation];
+    NSDate *mybirth = [NSDate dateWithNaturalLanguageString:@"1989/05/22" locale:myhash];
+    
+    
+    double timeinterval = [mybirth timeIntervalSinceNow];
+    
+    
+    
+    NSLog(@"My birth is %@---the time interval is %f",mybirth,timeinterval);
+    
+    NSDateComponents *comps = [[NSDateComponents alloc] init];
+    [comps setYear: 1989];
+    [comps setMonth:5];
+    [comps setDay:22];
+    
+    NSCalendar *g = [NSCalendar currentCalendar];
+    [g setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Harbin"]];
+    NSLog(@".....:%@", [g calendarIdentifier]);
+    
+    
+    NSDate *dateofbirth = [g dateFromComponents:comps];
+    double d = [[NSDate date] timeIntervalSinceDate:dateofbirth];
+    NSLog(@"%@,----time interval is %f",dateofbirth,d);
+}    
