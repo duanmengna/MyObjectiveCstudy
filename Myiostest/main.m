@@ -10,9 +10,11 @@
 //#import "Person.h"
 //#import "StockHolding.h"
 #import "ForeignStockHolding.h"
+#import "Employee.h"
+#import "Asset.h"
 
 void Stockfun();
-
+void test_employee_assets();
 void test_nsdate();
 void test_hostname();
 void test_groceries();
@@ -25,8 +27,9 @@ int main(int argc, const char * argv[])
       //test_nsdate();
       //test_hostname();
       //test_groceries();
+        test_employee_assets();
 
-      Stockfun();
+//      Stockfun();
         
 //        Person *person = [[Person alloc] init];
 //id类型类似于(void*) ,可以指向任何类的实例。而不需要强制转换
@@ -39,6 +42,40 @@ int main(int argc, const char * argv[])
 //        NSLog(@"person (%d,%f) has a BMI of %f",[person weightInKilos],[person heightInMeters],bmi);
     return 0;
   }
+}
+
+void test_employee_assets()
+{
+    NSMutableArray *employees = [[NSMutableArray alloc] init];
+    
+    for (int i = 0; i < 10; i++) {
+        Employee *person = [[Employee alloc] init];
+        
+        [person setWeightInKilos:90 + i];
+        [person setHeightInMeters:1.8 - i/10.0];
+        [person setEmployeeID:i];
+        
+        [employees addObject:person];
+    }
+    
+    // 循环10次（创建10个Assets对象）
+    for (int i = 0; i < 10; i++) {
+        Asset *asset = [[Asset alloc] init];
+        NSString *currentLabel = [NSString stringWithFormat:@"Laptop %d",i];
+        [asset setLabel:currentLabel];
+        [asset setResaleValue:i * 17];
+        
+        NSUInteger randomIndex = random() % [employees count];
+
+        Employee *randomEmployee = [employees objectAtIndex:randomIndex];
+        [randomEmployee addAssetsObject:asset];
+    }
+    
+    NSLog(@"Employees: %@",employees);
+    NSLog(@"Giving up ownership of one employee");
+    [employees removeObjectAtIndex:5];
+    NSLog(@"Giving up ownership of array");
+    employees = nil;
 }
     void Stockfun()
     {

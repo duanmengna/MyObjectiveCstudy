@@ -14,6 +14,7 @@
 		B158B4D61883B84F00FC572E /* StockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = B158B4D51883B84F00FC572E /* StockHolding.m */; };
 		B1AC7F1A18876F300041F046 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC7F1918876F300041F046 /* Employee.m */; };
 		B1AC7F1D188777FE0041F046 /* ForeignStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AC7F1C188777FE0041F046 /* ForeignStockHolding.m */; };
+		B1BB10881890FA1F00C6F6B1 /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = B1BB10871890FA1F00C6F6B1 /* Asset.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,8 @@
 		B1AC7F1918876F300041F046 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		B1AC7F1B188777FE0041F046 /* ForeignStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForeignStockHolding.h; sourceTree = "<group>"; };
 		B1AC7F1C188777FE0041F046 /* ForeignStockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForeignStockHolding.m; sourceTree = "<group>"; };
+		B1BB10861890FA1F00C6F6B1 /* Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asset.h; sourceTree = "<group>"; };
+		B1BB10871890FA1F00C6F6B1 /* Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asset.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 		B158B4C21883953C00FC572E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B1BB10861890FA1F00C6F6B1 /* Asset.h */,
+				B1BB10871890FA1F00C6F6B1 /* Asset.m */,
 				B158B4D11883974900FC572E /* Person.h */,
 				B158B4D21883974900FC572E /* Person.m */,
 				B158B4C31883953C00FC572E /* Foundation.framework */,
@@ -159,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1BB10881890FA1F00C6F6B1 /* Asset.m in Sources */,
 				B158B4D31883974900FC572E /* Person.m in Sources */,
 				B1AC7F1D188777FE0041F046 /* ForeignStockHolding.m in Sources */,
 				B1AC7F1A18876F300041F046 /* Employee.m in Sources */,
